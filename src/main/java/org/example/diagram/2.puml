@@ -1,0 +1,16 @@
+@startuml
+start
+:Якщо n == 0, повернути 0;
+:Якщо n == 1, повернути 1;
+:prev = 0;
+:curr = 1;
+:count = 2;
+repeat
+  :next = prev + curr;
+  :prev = curr;
+  :curr = next;
+  :count = count + 1;
+repeat while (count <= n)
+:Повернути curr;
+stop
+@enduml

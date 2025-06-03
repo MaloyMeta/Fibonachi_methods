@@ -1,0 +1,11 @@
+@startuml
+start
+:Ініціалізувати масив dp[];
+:dp[0] = 0;
+:dp[1] = 1;
+repeat
+  :dp[i] = dp[i-1] + dp[i-2];
+repeat while (i < n)
+:Повернути dp[n];
+stop
+@enduml
