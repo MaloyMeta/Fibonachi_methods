@@ -2,6 +2,10 @@ package org.example;
 
 public class DynamicFibonachi {
     public static int calculate(int num){
+       if (num == 0 || num == 1){
+           return num;
+       }
+
         int[] fibo = new int[num + 1];
 
         fibo[0] = 0;
